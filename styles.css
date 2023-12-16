@@ -280,7 +280,7 @@ section::before {
 }
 
 .about-card {
-    min-width: 350px;
+    min-width: 400px;;
     max-width: 600px;
     background: var(--primary);
     padding: 1rem;
@@ -518,7 +518,7 @@ footer{
     }
 
     .welcome-description {
-        min-width: 380px;
+        min-width: 350px;
     }
 
     .welcome h2 {
@@ -543,6 +543,10 @@ footer{
 
     .welcome-img img {
         display: none;
+    }
+
+    .second-content{
+        height: fit-content;
     }
 
     .about-img img {
@@ -575,7 +579,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .wrapper {
         display: block;
     }
@@ -596,6 +600,8 @@ footer{
         background: var(--primary);
         padding: 1rem;
         border-radius: 1rem;
+        min-width: 350px;
+    
     }
 
     .about-card h1 {
@@ -639,4 +645,24 @@ footer{
         right: 10px;
     }
 
+}
+
+
+@media screen and (max-width: 320px){
+    
+    section{
+        padding: 0;
+    }
+
+    .welcome-description{
+        min-width: 320px;
+    }
+
+    .about-card{
+        min-width: 300px;
+    }
+    
+    .horizontal-wrapper{
+        min-width: 300px;
+    }
 }

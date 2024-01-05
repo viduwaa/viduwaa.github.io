@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* rowdies-300 - latin_latin-ext_vietnamese */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Rowdies";
+    font-style: normal;
+    font-weight: 300;
+    src: url("fonts/rowdies-v17-latin_latin-ext_vietnamese-300.woff2")
+        format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rowdies-regular - latin_latin-ext_vietnamese */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Rowdies";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/rowdies-v17-latin_latin-ext_vietnamese-regular.woff2")
+        format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rowdies-700 - latin_latin-ext_vietnamese */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Rowdies";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/rowdies-v17-latin_latin-ext_vietnamese-700.woff2")
+        format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+    font-family: "Rowdies", sans-serif;
+}
+
+.text-stroke-3 {
+    -webkit-text-stroke: 1px black;
+}
+
+.card-bg{
+  background-size: cover;
+  
+}
+
+.card-des{
+    visibility: hidden;
+    transition: all 500ms ease-in-out;
+}
+
+
+.card-bg:hover .card-des{
+    padding-bottom: 50px;   
+}
+
+.card-link-git::after{
+    content: 'Git';
+}
+.card-link-web::after{
+    content: 'Web';
+}
+
+.card-bg:hover .card-des{
+    visibility: visible;
+} 
+

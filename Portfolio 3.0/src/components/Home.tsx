@@ -1,13 +1,10 @@
 
 import { useContext, useEffect, useRef, useState } from "react";
 import WAVES from "vanta/dist/vanta.waves.min";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { SiteContext } from "../helpers/SiteContext";
+import { MySocials } from "../helpers/MySocials";
 
 
 type VantaEffect = {
@@ -61,10 +58,9 @@ function Home() {
                 </div>
                 <div className="md:w-[30%] w-full">
                     <ul className="flex items-center justify-evenly">
-                        <Link to="https://www.facebook.com/viduladeneth.salwathura" target="_blank" className="hover:text-blue-700"><li><FaFacebook size={50}/></li></Link>
-                        <Link to="https://twitter.com/viduwa_" target="_blank" className="hover:text-blue-700"><li><FaTwitter size={50}/></li></Link>
-                        <Link to="https://www.linkedin.com/in/viduladeneth/" target="_blank" className="hover:text-blue-700"><li><FaLinkedin size={50}/></li></Link>
-                        <Link to="https://github.com/viduwaa" target="_blank" className="hover:text-red-900"><li><FaGithub size={50}/></li></Link>
+                        {MySocials.map((item,key)=>
+                           <li key={key}> <Link to={item.link} target="_blank" className={`hover:text-[${item.hoverColor}]`}>{item.icon}</Link></li>
+                        )}
                     </ul>
                 </div>
 

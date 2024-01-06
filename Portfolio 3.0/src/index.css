@@ -34,6 +34,18 @@ html {
     font-family: "Rowdies", sans-serif;
 }
 
+/* #navbar a.active{
+    color:red
+} */
+
+.active{
+    border: none;
+    border-radius: 12px;
+    background: #eeecec;
+    padding: 5px;
+    transition: all 100ms ease-in-out;
+}
+
 .text-stroke-3 {
     -webkit-text-stroke: 1px black;
 }
@@ -64,3 +76,11 @@ html {
     visibility: visible;
 } 
 
+.timeline::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 100%;
+    background: #000;
+    transform: rotateZ(90deg); 
+}

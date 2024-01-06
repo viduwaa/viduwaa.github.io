@@ -4,17 +4,17 @@ function About() {
     return (
         <>
             <section
-                className="container m-auto flex flex-wrap justify-around gap-4 min-h-dvh items-center"
+                className="container min-h-[100vh] m-auto grid grid-cols-1 items-center justify-center md:grid-cols-2 gap-10"
                 id="about"
             >
-                <div>
+                <div className="m-auto">
                     <img
                         src="assets\sec2_bg.png"
                         alt=""
-                        className="max-w-[400px]"
+                        className="max-w-[450px]"
                     />
                 </div>
-                <div className="md:max-w-[60%]">
+                <div className="">
                     <div className="mb-4">
                         <h1 className="text-5xl">About me</h1>
                         <h3 className="text-2xl">

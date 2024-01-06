@@ -5,23 +5,27 @@ import About from "./components/About";
 import { SiteContext } from "./helpers/SiteContext";
 import { scroller } from "react-scroll/modules";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 function App() {
-    const scrollToSection = (sectionId:string) => {
+    const scrollToSection = (sectionId: string) => {
         scroller.scrollTo(sectionId, {
-          duration: 800,
-          delay: 0,
-          smooth: 'easeInOutQuart',
+            duration: 800,
+            delay: 0,
+            smooth: "easeInOutQuart",
         });
-    }
+    };
     return (
         <>
             <BrowserRouter>
-                <SiteContext.Provider value={{scrollToSection}}>
+                <SiteContext.Provider value={{ scrollToSection }}>
                     <Navbar />
                     <Home />
                     <About />
-                    <Projects/>
+                    <Projects />
+                    <Experience />
+                    <Contact />
                 </SiteContext.Provider>
             </BrowserRouter>
         </>

@@ -69,7 +69,7 @@ const EmailForm = () => {
         <form
             ref={form}
             onSubmit={validateForm}
-            className="flex flex-col p-5 md:p-4 border rounded-md"
+            className="flex flex-col m-2 p-2 md:p-4 border rounded-md"
             noValidate
         >
             <label htmlFor="contact_name">
@@ -130,7 +130,7 @@ const EmailForm = () => {
                 <ReCAPTCHA
                     sitekey="6LdPvkcpAAAAABbXFraWdYWDVJKrnjqlJO-ud_ki"
                     onChange={onChange}
-                    className="mb-3"
+                    className="mb-3 object-cover"
                 />
                 {sent === "failed" ? (
                     <span className="text-red-600 float-right">

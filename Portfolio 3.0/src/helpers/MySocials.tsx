@@ -10,27 +10,27 @@ export const MySocials=[
         link: "https://www.facebook.com/viduladeneth.salwathura",
         icon: <FaFacebook size={50}/>,
         color:"black",
-        hoverColor:"#0866FF"
+        hoverColor:'facebook'
     },
     {
         social:"Twitter",
         link: "https://twitter.com/viduwa_",
         icon: <FaTwitter size={50}/>,
         color:"black",
-        hoverColor:"#1D9BF0"
+        hoverColor:'twitter'
     },
     {
         social:"LinkedIn",
         link: "https://www.linkedin.com/in/viduladeneth/",
         icon: <FaLinkedin size={50}/>,
         color:"black",
-        hoverColor:"#0077B5"
+        hoverColor:'linkedin'
     },
     {
         social:"GitHub",
         link: "https://github.com/viduwaa",
         icon: <FaGithub size={50}/>,
         color:"black",
-        hoverColor:"#B10000"
+        hoverColor:'github'
     },
 ]

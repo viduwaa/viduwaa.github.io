@@ -1,11 +1,9 @@
-
 import { useContext, useEffect, useRef, useState } from "react";
 import WAVES from "vanta/dist/vanta.waves.min";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { SiteContext } from "../helpers/SiteContext";
-import { MySocials } from "../helpers/MySocials";
-
+import { SiteContext } from "../../helpers/SiteContext";
+import { MySocials } from "../../helpers/MySocials";
 
 type VantaEffect = {
     destroy: () => void;
@@ -15,8 +13,8 @@ function Home() {
     const [vantaEffect, setVantaEffect] = useState<VantaEffect | null>(null);
     const myRef = useRef(null);
 
-    const {scrollToSection} = useContext(SiteContext)
-    
+    const { scrollToSection } = useContext(SiteContext);
+
     /* useEffect(() => {
         if (!vantaEffect) {
             setVantaEffect(
@@ -44,13 +42,14 @@ function Home() {
 
     return (
         <>
-            <section id="home"
-                className="min-h-[100dvh] flex flex-col items-center justify-center"
+            <section
+                id="home"
+                className="min-h-[100dvh] flex flex-col items-center justify-center finisher-header"
                 /* ref={myRef} */
             >
                 <div className="container mx-auto my-[10%] flex items-center flex-col gap-6 text-white stroke-black text-stroke-3">
                     <h1 className="text-6xl">Hi, I'm Vidula Deneth</h1>
-                    <h2 className="text-4xl text-center">
+                    <h2 className="text-4xl text-center ">
                         Here, you'll find a fusion of creativity and
                         functionality, as I create & explore the world of
                         programming, web development and design.
@@ -58,16 +57,28 @@ function Home() {
                 </div>
                 <div className="md:w-[30%] w-full">
                     <ul className="flex items-center justify-evenly">
-                        {MySocials.map((item,key)=>
-                           <li key={key}> <Link to={item.link} target="_blank" className={`hover:text-[${item.hoverColor}]`}>{item.icon}</Link></li>
-                        )}
+                        {MySocials.map((item, key) => (
+                            <li
+                                key={key}
+                                className={`hover:text-${item.hoverColor}`}
+                            >
+                                {" "}
+                                <Link to={item.link} target="_blank">
+                                    {item.icon}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
 
-                <div className="absolute bottom-14">
-                <Link to="/" onClick={() => scrollToSection('about')}><FaAngleDoubleDown /></Link>
+                <div className="absolute bottom-14 hover:text-linkedin hover:text-facebook hover:text-github hover:text-twitter">
+                    <Link to="/" onClick={() => scrollToSection("about")}>
+                        <FaAngleDoubleDown />
+                    </Link>
                 </div>
             </section>
+            
+        
         </>
     );
 }

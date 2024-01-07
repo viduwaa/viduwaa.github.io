@@ -1,5 +1,20 @@
+import { motion } from "framer-motion";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
+const fadeinAnimations = {
+    initial: {
+        opacity: 0,
+        y: 150,
+    },
+    animate: (index: number) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: 0.2 * index,
+        },
+    }),
+};
 
 type ProjectCardProps = {
     prjbg: string;
@@ -7,7 +22,11 @@ type ProjectCardProps = {
     prjdesc: string;
     weblink: string | null;
     gitlink: string;
+    index:number
 };
+
+
+
 
 function ProjectCard({
     prjbg,
@@ -15,13 +34,19 @@ function ProjectCard({
     prjdesc,
     weblink,
     gitlink,
+    index
 }: ProjectCardProps) {
     return (
-        <div
+        <motion.div
             className={
                 "card-bg min-w-[1fr] min-h-[250px] max-h-[350px] flex items-end overflow-hidden rounded-lg backdrop-blur-sm shadow-md"
             }
             style={{ backgroundImage: `url(${prjbg})` }}
+            variants={fadeinAnimations}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            custom={index}
         >
             <div className="text-white backdrop-blur-lg w-full text-center ">
                 <h2 className="text-xl p-1">{prjtitle}</h2>
@@ -48,7 +73,7 @@ function ProjectCard({
                     </li>
                 </ul>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

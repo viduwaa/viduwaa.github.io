@@ -4,19 +4,19 @@ function About() {
     return (
         <>
             <section
-                className="container min-h-[100vh] m-auto grid grid-cols-1 items-center justify-center md:grid-cols-2 gap-10"
+                className="container min-h-[100vh] m-auto grid grid-cols-1 items-center justify-center sm:grid-col-2 md:grid-cols-3 gap-5"
                 id="about"
             >
                 <div className="m-auto">
                     <img
                         src="assets\sec2_bg.png"
                         alt=""
-                        className="max-w-[450px]"
+                        className="object-cover"
                     />
                 </div>
-                <div className="">
+                <div className="p-2 md:col-span-2">
                     <div className="mb-4">
-                        <h1 className="text-5xl">About me</h1>
+                        <h1 className="text-5xl mb-[10px]">About me</h1>
                         <h3 className="text-2xl">
                             I am currently BICT undergraduate student at
                             Rajarata University of Sri Lanka. constantly

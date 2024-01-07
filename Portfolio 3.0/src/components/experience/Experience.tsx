@@ -1,5 +1,5 @@
 import { FaCircle } from "react-icons/fa";
-import { ExperienceItems } from "../helpers/ExperienceItem";
+import { ExperienceItems } from "../../helpers/ExperienceItem";
 
 function Experience() {
     return (
@@ -14,11 +14,15 @@ function Experience() {
                     <ul className="ml-10">
                         {ExperienceItems.map((item, key) => {
                             return (
-                                <li key={key} className="flex items-start gap-8 text-3xl w-full mb-5">
+                                <li
+                                    key={key}
+                                    className="flex items-start gap-8 text-3xl w-full mb-5"
+                                >
                                     <FaCircle className="mt-1" />
                                     <div className="font-thin flex flex-col items-start">
                                         <h3 className="text-3xl">
-                                            {item.time}<br />
+                                            {item.time}
+                                            <br />
                                             {item.company}
                                         </h3>
                                         <h4 className="font-bold text-4xl ">

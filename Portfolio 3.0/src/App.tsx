@@ -1,12 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
+import Navbar from "./components/navbar/Navbar";
+import Home from "./components/home/Home";
+import About from "./components/about/About";
 import { SiteContext } from "./helpers/SiteContext";
 import { scroller } from "react-scroll/modules";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
+import Projects from "./components/projects/Projects";
+import Experience from "./components/experience/Experience";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
     const scrollToSection = (sectionId: string) => {
@@ -26,6 +27,7 @@ function App() {
                     <Projects />
                     <Experience />
                     <Contact />
+                    <Footer />
                 </SiteContext.Provider>
             </BrowserRouter>
         </>

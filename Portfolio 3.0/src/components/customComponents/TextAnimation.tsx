@@ -19,6 +19,7 @@ const defaultAnimations = {
   },
 };
 
+
 function TextAnimation({
   text,
   el: Wrapper = "p",
@@ -36,18 +37,19 @@ function TextAnimation({
         transition={{ staggerChildren: 0.1 }}
       >
         {text.split(" ").map((word, key) => (
-          <span key={key} className="inline-block">
+          <motion.span key={key} className="inline-block" >
             {word.split("").map((char, lkey) => (
               <motion.span
                 key={`letter${lkey}`}
                 className="inline-block"
                 variants={defaultAnimations}
+                
               >
                 {char}
               </motion.span>
             ))}
             <span className="inline-block">&nbsp;</span>
-          </span>
+          </motion.span>
         ))}
       </motion.span>
     </Wrapper>

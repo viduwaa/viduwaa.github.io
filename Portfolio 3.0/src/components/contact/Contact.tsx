@@ -11,7 +11,7 @@ function Contact() {
 
   return (
     <section
-      className="text-text dark flex min-h-[90vh] flex-col items-center justify-center transition-all delay-200 ease-in-out"
+      className="text-text py-16 dark flex min-h-[90vh] flex-col items-center justify-center transition-all delay-200 ease-in-out"
       id="contact"
     >
       <div className="container m-auto grid grid-cols-1 md:grid-cols-2">
@@ -22,9 +22,9 @@ function Contact() {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          <h1 className="mb-[2%] mt-[10%] text-5xl">Get In Touch With me</h1>
+          <h1 className="mb-[2%] mt-[10%] text-4xl sm:text-5xl transition-all ease-linear text-center">Get In Touch With me</h1>
 
-          <ul id="mySocials" className="flex w-[50%] justify-evenly p-5">
+          <ul id="mySocials" className="flex md:w-[50%] md:justify-evenly p-5 gap-5">
             {MySocials.map((item, key) => (
               <li key={key}>
                 {" "}

@@ -26,7 +26,7 @@ function TechStack({
         whileInView="animate"
         viewport={{ once: true }}
       >
-        {!(name === undefined) ? <h2 className="text-3xl">{name}</h2> : <></>}
+        {!(name === undefined) ? <h2 className="md:text-3xl sm:text-2xl text-xl transition-all ease-linear">{name}</h2> : <></>}
         {/* <h2 className="text-3xl">{name}</h2> */}
         {!(subcontext === undefined) && <h3>{subcontext}</h3>}
 

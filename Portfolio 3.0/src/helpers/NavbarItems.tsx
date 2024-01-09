@@ -48,7 +48,7 @@ const Navbar = () => {
         variants={navList}
       >
         {items.map(item => (
-          <motion.li className="text-5xl mb-4 cursor-pointer " variants={navItem} key={item}>
+          <motion.li className="text-4xl mb-4 cursor-pointer " variants={navItem} key={item}>
             <Link to={item.toLowerCase()} smooth={"easeInOutQuart"}>{item}</Link>
           </motion.li>
         ))}

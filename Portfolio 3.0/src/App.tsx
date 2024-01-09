@@ -9,7 +9,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import "./styles/background.css";
 import "./styles/loader.css";
-import Background from "./components/customComponents/background";
+import Background from "./components/customComponents/Background";
 import { useEffect, useState } from "react";
 
 function App() {

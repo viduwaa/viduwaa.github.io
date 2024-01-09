@@ -49,7 +49,7 @@ function Navbar() {
             <AnimatePresence>
               {isToggled && (
                 <motion.div
-                  className="fixed left-0 top-20 w-full bg-[#f3eeeeda] px-3 backdrop-blur-xl"
+                  className="fixed left-0 top-20 w-full bg-[#252323da] px-3 backdrop-blur-xl "
                   initial="hidden"
                   animate={isToggled ? "visible" : "hidden"}
                   exit="hidden"

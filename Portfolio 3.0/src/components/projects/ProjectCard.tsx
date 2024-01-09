@@ -55,7 +55,7 @@ function ProjectCard({
               <Link
                 to={weblink}
                 target="_blank"
-                className="card-link-web hover:text-blue-500"
+                className="card-link-web text-blue-500 hover:text-white"
               >
                 <FaGlobe size={40} />
               </Link>
@@ -68,7 +68,7 @@ function ProjectCard({
             <Link
               to={gitlink}
               target="_blank"
-              className="card-link-git hover:text-red-500 "
+              className="card-link-git text-red-500 hover:text-white transition-all ease-linear"
             >
               <FaGithub size={40} />
             </Link>

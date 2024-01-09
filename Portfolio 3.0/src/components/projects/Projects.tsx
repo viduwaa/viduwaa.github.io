@@ -8,10 +8,10 @@ function Projects() {
   const { fadeinAnimationstoUp } = useContext(SiteContext);
   return (
     <>
-      <section id="projects" className="text-text dark flex min-h-[100dvh]">
+      <section id="projects" className="text-text dark flex min-h-[100dvh] pt-28 sm:pt-28">
         <div className="container m-auto flex flex-col items-center">
           <motion.div
-            className="bg-primary text-accent mb-5 rounded-md p-3 text-center text-5xl"
+            className="bg-primary text-accent mb-5 rounded-md p-3 text-center text-3xl md:text-5xl sm:text-3xl transition-all ease-linear"
             variants={fadeinAnimationstoUp}
             initial="initial"
             whileInView="animate"

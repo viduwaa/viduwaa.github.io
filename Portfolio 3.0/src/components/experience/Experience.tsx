@@ -12,8 +12,8 @@ function Experience() {
       className="text-text dark flex min-h-[100dvh] items-center justify-center "
     >
       <div className="container m-auto">
-        <motion.h1 
-          className="text-accent bg-primary m-auto w-fit rounded-md p-5 text-5xl backdrop-blur-sm"
+        <motion.h1
+          className="text-accent bg-primary m-auto w-fit rounded-md p-5 text-2xl sm:text-3xl md:text-5xl transition-all ease-linear backdrop-blur-sm"
           variants={fadeinAnimationstoUp}
           initial="initial"
           whileInView="animate"
@@ -23,27 +23,27 @@ function Experience() {
         </motion.h1>
 
         <div className="min-h-fit p-3">
-          <ul className="ml-10">
+          <ul className="">
             {ExperienceItems.map((item, key) => {
               return (
                 <motion.li
                   key={key}
-                  className="text-primary border-text mb-5 flex w-[80%] mx-auto items-start gap-8 rounded-md  border bg-transparent p-3 text-3xl backdrop-blur-[2px]"
+                  className="text-primary border-text mx-auto mb-5 flex md:w-[80%]  items-start gap-8 rounded-md  border bg-transparent p-3 text-3xl backdrop-blur-[2px]"
                   variants={fadeinAnimationstoUp}
                   initial="initial"
                   whileInView="animate"
                   viewport={{ once: true }}
                   custom={key}
-                  whileHover={{ scale: 1.1}}
+                  whileHover={{ scale: 1.05 }}
                 >
                   <FaCircle className="mt-1" />
                   <div className="flex flex-col items-start font-thin">
-                    <h3 className="text-3xl">
+                    <h3 className="text-xl sm:text-2xl md:text-3xl transition-all ease-linear">
                       {item.time}
                       <br />
                       {item.company}
                     </h3>
-                    <h4 className="text-4xl font-bold ">{item.post}</h4>
+                    <h4 className="text-1xl sm:text-2xl md:text-4xl transition-all ease-linear font-bold ">{item.post}</h4>
                   </div>
                 </motion.li>
               );

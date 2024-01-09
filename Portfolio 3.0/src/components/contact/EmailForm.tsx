@@ -25,10 +25,10 @@ const EmailForm = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          /* "YOUR_SERVICE_ID" */ "service_ouogb6o",
-          /* "YOUR_TEMPLATE_ID" */ "template_wf7m15e",
+          import.meta.env.VITE_YOUR_SERVICE_ID ,
+          import.meta.env.VITE_YOUR_TEMPLATE_ID,
           form.current,
-          /* "YOUR_PUBLIC_KEY" */ "loj99x5_tZsMa619c",
+          import.meta.env.VITE_YOUR_PUBLIC_KEY ,
         )
         .then(
           (result) => {
@@ -136,7 +136,8 @@ const EmailForm = () => {
 
       <div>
         <ReCAPTCHA
-          sitekey="6LdPvkcpAAAAABbXFraWdYWDVJKrnjqlJO-ud_ki"
+        
+          sitekey={import.meta.env.VITE_CAPTCHA_SITE_KEY}
           onChange={onChange}
           className="mb-3 object-cover"
         />

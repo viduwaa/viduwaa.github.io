@@ -30,18 +30,76 @@
         format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+@layer base {
+    :root {
+      --text: #151901;
+      --background: #fdfeec;
+      --primary: #757f06;
+      --secondary: #64c1f7;
+      --accent: #1d0bda;
+    }
+    .dark {
+      --text: #fafee5;
+      --background: #111201;
+      --primary: #eff982;
+      --secondary: #08659b;
+      --accent: #3625f4;
+    }
+  }  
+
 html {
     font-family: "Rowdies", sans-serif;
 }
+
+::-webkit-scrollbar {
+    height: 100px;
+    width: 10px;
+    background: #fff3;
+    -webkit-border-radius: 1ex;
+   
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    -webkit-border-radius: 1ex;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: #fff3;
+  }
 
 /* #navbar a.active{
     color:red
 } */
 
+.cv-download:hover.cv-download::after{
+  opacity: 1;
+}
+
+.cv-download::after{
+  bottom:-25px;
+  left: -5px;
+  content: 'My CV';
+  position: absolute;
+  font-size: 12px;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.welcome-text{
+  text-shadow: -2px -1px 3px rgba(54, 37, 244, 1),-5px -2px 3px rgba(33, 51, 119, 1),-1px 2px 6px rgba(3, 2, 13, 1);
+}
+
+.welcome-desc{
+  text-shadow: -3px -1px 1px rgba(239, 249, 130, 1),-3px -1px 9px rgba(54, 37, 244, 1);
+}
+
 .active{
     border: none;
     border-radius: 12px;
-    background: #eeecec;
+    background: #3625f4;
+    color:var(--primary);
     padding: 5px;
     transition: all 100ms ease-in-out;
 }
@@ -84,3 +142,26 @@ html {
     background: #000;
     transform: rotateZ(90deg); 
 }
+
+.prjtitle{
+  text-shadow: 3px 2px 4px rgba(54, 37, 244, 0.78);
+}
+
+.prjdesc{
+  text-shadow: 3px 2px 4px rgba(128, 0, 0, 0.78);
+}
+
+
+
+
+
+/* * {
+    overflow-y: scroll; 
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+  }
+  
+ 
+ *::-webkit-scrollbar {
+    display: none;
+  } */

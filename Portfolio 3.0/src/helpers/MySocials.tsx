@@ -9,28 +9,28 @@ export const MySocials=[
         social:"Facebook",
         link: "https://www.facebook.com/viduladeneth.salwathura",
         icon: <FaFacebook size={50}/>,
-        color:"black",
+        color:"facebook",
         hoverColor:'facebook'
     },
     {
         social:"Twitter",
         link: "https://twitter.com/viduwa_",
         icon: <FaTwitter size={50}/>,
-        color:"black",
+        color:"twitter",
         hoverColor:'twitter'
     },
     {
         social:"LinkedIn",
         link: "https://www.linkedin.com/in/viduladeneth/",
         icon: <FaLinkedin size={50}/>,
-        color:"black",
+        color:"linkedin",
         hoverColor:'linkedin'
     },
     {
         social:"GitHub",
         link: "https://github.com/viduwaa",
         icon: <FaGithub size={50}/>,
-        color:"black",
+        color:"github",
         hoverColor:'github'
     },
 ]

@@ -3,78 +3,80 @@ import { FaGithub, FaGlobe } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const fadeinAnimations = {
-    initial: {
-        opacity: 0,
-        y: 150,
+  initial: {
+    opacity: 0,
+    y: 150,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.2 * index,
     },
-    animate: (index: number) => ({
-        opacity: 1,
-        y: 0,
-        transition: {
-            delay: 0.2 * index,
-        },
-    }),
+  }),
 };
 
 type ProjectCardProps = {
-    prjbg: string;
-    prjtitle: string;
-    prjdesc: string;
-    weblink: string | null;
-    gitlink: string;
-    index:number
+  prjbg: string;
+  prjtitle: string;
+  prjdesc: string;
+  weblink: string | null;
+  gitlink: string;
+  index: number;
 };
 
-
-
-
 function ProjectCard({
-    prjbg,
-    prjtitle,
-    prjdesc,
-    weblink,
-    gitlink,
-    index
+  prjbg,
+  prjtitle,
+  prjdesc,
+  weblink,
+  gitlink,
+  index,
 }: ProjectCardProps) {
-    return (
-        <motion.div
-            className={
-                "card-bg min-w-[1fr] min-h-[250px] max-h-[350px] flex items-end overflow-hidden rounded-lg backdrop-blur-sm shadow-md"
-            }
-            style={{ backgroundImage: `url(${prjbg})` }}
-            variants={fadeinAnimations}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            custom={index}
-        >
-            <div className="text-white backdrop-blur-lg w-full text-center ">
-                <h2 className="text-xl p-1">{prjtitle}</h2>
-                <h3 className="mb-1 p-2">{prjdesc}</h3>
-                <ul className="card-des flex items-center justify-center gap-5 mb-[-30px]">
-                    {!(weblink === null) ? (<li className="">
-                        <Link
-                            to={weblink}
-                            target="_blank"
-                            className="card-link-web hover:text-blue-500 "
-                        >
-                            <FaGlobe size={40} />
-                        </Link>
-                    </li>) : <></>}
-                    
-                    <li className="">
-                        <Link
-                            to={gitlink}
-                            target="_blank"
-                            className="card-link-git hover:text-red-500 "
-                        >
-                            <FaGithub size={40} />
-                        </Link>
-                    </li>
-                </ul>
-            </div>
-        </motion.div>
-    );
+  return (
+    <motion.div
+      className={
+        "card-bg flex max-h-[350px] min-h-[250px] min-w-[1fr] items-end overflow-hidden rounded-md border-text  border shadow-md backdrop-blur-sm"
+      }
+      style={{ backgroundImage: `url(${prjbg})` }}
+      variants={fadeinAnimations}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+      custom={index}
+      whileHover={{ scale: 1.1 }}
+    >
+      <div className="w-full text-center text-white backdrop-blur-lg ">
+        <h2 className="p-1 text-xl prjtitle">{prjtitle}</h2>
+        <h3 className="mb-1 p-2 text-white font-thin prjdesc">{prjdesc}</h3>
+        <ul className="card-des mb-[-30px] flex items-center justify-center gap-5">
+          {!(weblink === null) ? (
+            <li className="">
+              <Link
+                to={weblink}
+                target="_blank"
+                className="card-link-web hover:text-blue-500"
+              >
+                <FaGlobe size={40} />
+              </Link>
+            </li>
+          ) : (
+            <></>
+          )}
+
+          <li className="">
+            <Link
+              to={gitlink}
+              target="_blank"
+              className="card-link-git hover:text-red-500 "
+            >
+              <FaGithub size={40} />
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </motion.div>
+  );
 }
 
 export default ProjectCard;

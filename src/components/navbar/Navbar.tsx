@@ -1,3 +1,4 @@
+import profilePic from "../../../public/assets/Photo.jpg"
 import { useState } from "react";
 import { FaFileDownload } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -61,7 +62,7 @@ function Navbar() {
             </AnimatePresence>
             <Link to="home" smooth={"easeInOutQuart"}>
               <img
-                src="assets\Photo.jpg"
+                src="/assets/Photo.jpg"
                 alt="profile picture"
                 className="h-14 w-14 rounded-full object-cover border border-primary"
               />

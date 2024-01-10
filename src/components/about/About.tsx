@@ -1,7 +1,9 @@
+import aboutPhoto from "../../../public/assets/sec2_bg.png"
 import { useContext, useEffect } from "react";
 import TechStack from "./TechStack";
 import { SiteContext } from "../../helpers/SiteContext";
 import { motion } from "framer-motion";
+
 
 function About() {
   const { fadeinAnimations, updateDelay } = useContext(SiteContext);
@@ -17,7 +19,7 @@ function About() {
           <motion.div className="m-auto" initial="initial"
             whileInView="animate" variants={fadeinAnimations('About')}
             viewport={{ once: true }}>
-            <img src="assets\sec2_bg.png" alt="" className="object-cover md:max-h-[550px] sm:max-h-[350px] max-h-[250px]" />
+            <img src="/assets/sec2_bg.png" alt="" className="object-cover md:max-h-[550px] sm:max-h-[350px] max-h-[250px]" />
           </motion.div>
 
           <motion.div

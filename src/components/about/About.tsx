@@ -1,4 +1,3 @@
-import aboutPhoto from "../../../public/assets/sec2_bg.png"
 import { useContext, useEffect } from "react";
 import TechStack from "./TechStack";
 import { SiteContext } from "../../helpers/SiteContext";

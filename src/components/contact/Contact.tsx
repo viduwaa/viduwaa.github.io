@@ -5,6 +5,7 @@ import { FaFileDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { SiteContext } from "../../helpers/SiteContext";
+import CV from "/assets/VidulaDeneth_CV.pdf"
 
 function Contact() {
   const { fadeinAnimationstoUp } = useContext(SiteContext);
@@ -43,7 +44,7 @@ function Contact() {
             className="border-primary rounded border border-black p-3 backdrop-blur-[2px]"
             whileHover={{ scale: 1.1 }}
           >
-            <Link to="assets\VidulaDeneth_CV.pdf">
+            <Link to={CV} target="_blank">
               <h2 className="flex items-center gap-2 text-2xl">
                 {" "}
                 Download CV <FaFileDownload color="yellow" />

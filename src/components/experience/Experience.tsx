@@ -13,7 +13,7 @@ function Experience() {
     >
       <div className="container m-auto">
         <motion.h1
-          className="text-accent bg-primary m-auto w-fit rounded-md p-5 text-2xl sm:text-3xl md:text-5xl transition-all ease-linear backdrop-blur-sm"
+          className="text-center m-auto text-accent bg-primary mb-[10px] w-fit rounded-md p-3  text-3xl sm:text-3xl md:text-5xl transition-all ease-linear"
           variants={fadeinAnimationstoUp}
           initial="initial"
           whileInView="animate"

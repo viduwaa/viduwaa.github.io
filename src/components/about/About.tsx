@@ -13,7 +13,7 @@ function About() {
 
   return (
     <>
-      <section className="dark min-h-[100vh] sm:py-16" id="about">
+      <section className="dark min-h-[100vh]  py-16 md:p-0" id="about">
         <div className="sm:grid-col-2 container m-auto grid min-h-[100vh] grid-cols-1 items-center justify-center gap-5 md:grid-cols-3 ">
           <motion.div className="m-auto hidden md:block" initial="initial"
             whileInView="animate" variants={fadeinAnimations('About')}
@@ -49,6 +49,7 @@ function About() {
                 <TechStack subcontext="Programming" />
                 <TechStack subcontext="Designing" />
                 <TechStack subcontext="Cloud" />
+                <TechStack subcontext="Version Control"/>
               </div>
             </div>
           </motion.div>

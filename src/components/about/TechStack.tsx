@@ -3,6 +3,7 @@ import {
   CloudItems,
   DesigningItems,
   TechStackItems,
+  VersionControl,
 } from "../../helpers/TechStackItems";
 import { ProgrammingItems } from "../../helpers/TechStackItems";
 import ScrollAnimate from "../customComponents/ScrollAnimate";
@@ -30,7 +31,7 @@ function TechStack({
         {/* <h2 className="text-3xl">{name}</h2> */}
         {!(subcontext === undefined) && <h3>{subcontext}</h3>}
 
-        <ul className="flex gap-3">
+        <ul className="flex gap-3 flex-wrap">
           {subcontext === undefined
             ? TechStackItems.map((item, key) => (
                 <ScrollAnimate index={key} key={key} color={item.color}>
@@ -53,7 +54,7 @@ function TechStack({
                       {item.name}
                     </ScrollAnimate>
                   ))
-                : CloudItems.map((item, key) => (
+                : subcontext=== "Cloud" ? CloudItems.map((item, key) => (
                     <ScrollAnimate index={key} key={key}>
                       <img
                         src={item.image}
@@ -61,7 +62,7 @@ function TechStack({
                         className="h-[50px]"
                       />
                     </ScrollAnimate>
-                  ))}
+                  )) : VersionControl.map((item,key)=> <ScrollAnimate index={key} key={key}> {item.name}</ScrollAnimate>)}
         </ul>
       </motion.div>
     </>

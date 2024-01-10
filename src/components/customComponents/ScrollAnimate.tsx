@@ -29,7 +29,7 @@ function ScrollAnimate({ index, color, children }: ScrollAnimateProps) {
       whileInView="animate"
       viewport={{ once: true }}
       custom={index}
-      className="mt-1"
+      className="mt-1 text-sm"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
     >

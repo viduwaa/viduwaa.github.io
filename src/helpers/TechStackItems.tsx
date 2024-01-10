@@ -1,4 +1,4 @@
-import { FaBootstrap, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaBootstrap, FaNodeJs, FaReact ,FaGitAlt } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiAdobeillustrator, SiAdobephotoshop, SiAdobepremierepro } from "react-icons/si";
 
 import C from "/assets/icons/c.svg"
@@ -88,5 +88,13 @@ export const CloudItems=[
         id:113,
         name:"Azure",
         image:Azure
+    }
+]
+
+
+export const VersionControl =[
+    {
+        id:113,
+        name:<FaGitAlt size={50} color={"#FF4E35"}/>
     }
 ]

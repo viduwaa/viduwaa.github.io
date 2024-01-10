@@ -1,4 +1,4 @@
-import planet from "/assets/background/planet.png";
+import planet from "/assets/background/planet.webp";
 import { useContext, useEffect } from "react";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";

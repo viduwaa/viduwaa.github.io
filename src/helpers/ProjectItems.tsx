@@ -1,9 +1,9 @@
-import PrjHooks from "/assets/projects/pr_hooks.jpg"
-import PrjReact from "/assets/projects/pr_react.jpg"
-import PrjHospital from "/assets/projects/pr_hospital.jpg"
-import PrjMal from "/assets/projects/pr_mal.jpg"
-import PrjTower from "/assets/projects/pr_tower.jpg"
-import PrjYT2 from "/assets/projects/pr_yt2spt.png"
+import PrjHooks from "/assets/projects/pr_hooks.webp"
+import PrjReact from "/assets/projects/pr_react.webp"
+import PrjHospital from "/assets/projects/pr_hospital.webp"
+import PrjMal from "/assets/projects/pr_mal.webp"
+import PrjTower from "/assets/projects/pr_tower.webp"
+import PrjYT2 from "/assets/projects/pr_yt2spt.webp"
 
 
 

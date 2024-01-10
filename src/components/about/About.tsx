@@ -15,10 +15,10 @@ function About() {
     <>
       <section className="dark min-h-[100vh] sm:py-16" id="about">
         <div className="sm:grid-col-2 container m-auto grid min-h-[100vh] grid-cols-1 items-center justify-center gap-5 md:grid-cols-3 ">
-          <motion.div className="m-auto" initial="initial"
+          <motion.div className="m-auto hidden md:block" initial="initial"
             whileInView="animate" variants={fadeinAnimations('About')}
             viewport={{ once: true }}>
-            <img src="/assets/sec2_bg.png" alt="" className="object-cover md:max-h-[550px] sm:max-h-[350px] max-h-[250px]" />
+            <img src="/assets/background/sec2_bg.webp" alt="" className="object-cover md:max-h-[550px] sm:max-h-[350px] max-h-[250px]" />
           </motion.div>
 
           <motion.div

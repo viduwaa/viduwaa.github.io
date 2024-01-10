@@ -32,7 +32,7 @@ function Contact() {
                 <Link
                   to={item.link}
                   target="_blank"
-                  className={`hover:text-${item.hoverColor}`}
+                  className={`text-${item.color}`}
                 >
                   {item.icon}
                 </Link>

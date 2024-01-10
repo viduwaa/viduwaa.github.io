@@ -61,7 +61,7 @@ function Navbar() {
             </AnimatePresence>
             <Link to="home" smooth={"easeInOutQuart"}>
               <img
-                src="/assets/Photo.jpg"
+                src="/assets/navbar/Photo.webp"
                 alt="profile picture"
                 className="h-14 w-14 rounded-full object-cover border border-primary"
               />

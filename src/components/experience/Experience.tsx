@@ -9,7 +9,7 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="text-text dark flex min-h-[100dvh] items-center justify-center "
+      className="text-text dark flex min-h-[80dvh] "
     >
       <div className="container m-auto">
         <motion.h1

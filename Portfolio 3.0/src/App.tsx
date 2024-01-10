@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter,HashRouter } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
@@ -35,7 +35,7 @@ function App() {
           <span className="loader"></span>
         </div>
       ) : (
-        <BrowserRouter>
+        <HashRouter>
           <SiteProvider>
             <>
               <Background />
@@ -48,7 +48,7 @@ function App() {
               <Footer />
             </>
           </SiteProvider>
-        </BrowserRouter>
+        </HashRouter>
       )}
     </>
   );

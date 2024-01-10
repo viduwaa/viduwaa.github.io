@@ -16,12 +16,11 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    /* const delay = setTimeout(() => {
+    const delay = setTimeout(() => {
       setLoading(false);
       clearTimeout(delay);
     }, 1000);
-    return () => clearTimeout(delay); */
-    window.onload = () => setLoading(false);
+    return () => clearTimeout(delay);
   }, []);
 
   return (

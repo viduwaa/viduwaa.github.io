@@ -4,6 +4,7 @@ import PrjHospital from "/assets/projects/pr_hospital.webp"
 import PrjMal from "/assets/projects/pr_mal.webp"
 import PrjTower from "/assets/projects/pr_tower.webp"
 import PrjYT2 from "/assets/projects/pr_yt2spt.webp"
+import PrjStore from "/assets/projects/pr_store.webp"
 
 
 
@@ -15,6 +16,13 @@ export const ProjectItems = [
         description:"A quiz App intergrated with OpenTDB API",
         webSite:"https://viduwaa.github.io/hooks_learn/",
         gitRepo:"https://github.com/viduwaa/hooks_learn/"
+    },
+    {
+        name:"Dynamic Shopping Cart Demo",
+        background:PrjStore,
+        description:"Simple shopping cart to understand React useContext and React router",
+        webSite:null,
+        gitRepo:"https://github.com/viduwaa/yt-playlist-to-spotify"
     },
     {
         name:"1st React App",
@@ -51,5 +59,7 @@ export const ProjectItems = [
         webSite:null,
         gitRepo:"https://github.com/viduwaa/yt-playlist-to-spotify"
     },
+    
+    
     
 ]

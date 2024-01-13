@@ -21,8 +21,8 @@ export const ProjectItems = [
         name:"Dynamic Shopping Cart Demo",
         background:PrjStore,
         description:"Simple shopping cart to understand React useContext and React router",
-        webSite:null,
-        gitRepo:"https://github.com/viduwaa/yt-playlist-to-spotify"
+        webSite:"https://viduwaa.github.io/react-store-example/",
+        gitRepo:"https://github.com/viduwaa/react-store-example"
     },
     {
         name:"1st React App",

@@ -32,16 +32,17 @@ function Contact() {
                         className="flex md:w-[50%] md:justify-evenly p-5 gap-5"
                     >
                         {MySocials.map((item, key) => (
-                            <li key={key}>
+                            <motion.li key={key} whileHover={{ scale: 1.3 }}>
                                 {" "}
                                 <Link
                                     to={item.link}
                                     target="_blank"
                                     className={`text-${item.color}`}
+                                    
                                 >
                                     {item.icon}
                                 </Link>
-                            </li>
+                            </motion.li>
                         ))}
                     </ul>
 

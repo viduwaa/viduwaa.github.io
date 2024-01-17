@@ -155,7 +155,7 @@ const EmailForm = () => {
       </div>
 
       <input
-        className="hover:bg-primary m-auto h-16 w-[50%] cursor-pointer rounded-md border hover:text-black   "
+        className="hover:bg-primary m-auto h-16 w-[50%] cursor-pointer rounded-md border hover:text-black transition-all ease-out "
         type="submit"
         value="Send"
       />

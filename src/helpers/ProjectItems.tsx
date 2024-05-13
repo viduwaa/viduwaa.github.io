@@ -5,11 +5,20 @@ import PrjMal from "/assets/projects/pr_mal.webp"
 import PrjTower from "/assets/projects/pr_tower.webp"
 import PrjYT2 from "/assets/projects/pr_yt2spt.webp"
 import PrjStore from "/assets/projects/pr_store.webp"
+import PrjMalkoha from "/assets/projects/pr_malkoha.webp"
+
 
 
 
 
 export const ProjectItems = [
+    {
+        name:"Student Materials Website",
+        background:PrjMalkoha,
+        description:"A simple UI based website for university students to find study materials",
+        webSite:"https://malkoha.site",
+        gitRepo:"https://github.com/viduwaa/malkohav2"
+    },
     {
         name:"Quiz App",
         background:PrjHooks,

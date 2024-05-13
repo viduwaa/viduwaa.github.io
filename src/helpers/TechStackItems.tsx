@@ -1,4 +1,4 @@
-import { FaBootstrap, FaNodeJs, FaReact ,FaGitAlt } from "react-icons/fa";
+import { FaBootstrap, FaNodeJs, FaReact ,FaGitAlt, FaPhp } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiAdobeillustrator, SiAdobephotoshop, SiAdobepremierepro } from "react-icons/si";
 
 import C from "/assets/icons/c.svg"
@@ -34,6 +34,11 @@ export  const TechStackItems = [
     id:104,
     name: <FaNodeJs size={50}/>,
     color: "#5FAE46"
+},
+{
+    id:105,
+    name: <FaPhp size={50}/>,
+    color: "#7377AD"
 },
 ]
 

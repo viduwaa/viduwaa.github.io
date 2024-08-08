@@ -6,12 +6,20 @@ import PrjTower from "/assets/projects/pr_tower.webp"
 import PrjYT2 from "/assets/projects/pr_yt2spt.webp"
 import PrjStore from "/assets/projects/pr_store.webp"
 import PrjMalkoha from "/assets/projects/pr_malkoha.webp"
+import PrjGaming from "/assets/projects/pr_gaming.webp"
 
 
 
 
 
 export const ProjectItems = [
+    {
+        name:"Firebase Mini-Gaming Site",
+        background:PrjGaming,
+        description:"A mini gaming website with React and Firebase backend",
+        webSite:"https://firebase-mini-gaming-site.pages.dev/",
+        gitRepo:"https://github.com/viduwaa/firebase-gaming-site"
+    },
     {
         name:"Student Materials Website",
         background:PrjMalkoha,

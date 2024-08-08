@@ -7,6 +7,7 @@ import Python from "/assets/icons/python.svg"
 import JS from "/assets/icons/js.svg"
 import AWS from "/assets/icons/aws.svg"
 import Azure from "/assets/icons/azure.svg"
+import Firebase from "/assets/icons/firebase-original.svg"
 
 export  const TechStackItems = [
     
@@ -93,6 +94,11 @@ export const CloudItems=[
         id:113,
         name:"Azure",
         image:Azure
+    },
+    {
+        id:114,
+        name:"Firebase",
+        image:Firebase
     }
 ]
 

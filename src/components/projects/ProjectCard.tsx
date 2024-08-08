@@ -44,7 +44,7 @@ function ProjectCard({
       whileInView="animate"
       viewport={{ once: true }}
       custom={index}
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ scale: 1.09 }}
     >
       <div className="w-full text-center text-white backdrop-blur-lg ">
         <h2 className="p-1 text-xl prjtitle">{prjtitle}</h2>

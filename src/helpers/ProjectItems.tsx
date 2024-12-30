@@ -7,11 +7,12 @@ import PrjYT2 from "/assets/projects/pr_yt2spt.webp";
 import PrjStore from "/assets/projects/pr_store.webp";
 import PrjMalkoha from "/assets/projects/pr_malkoha.webp";
 import PrjGaming from "/assets/projects/pr_gaming.webp";
+import PrjLibrary from "/assets/projects/pr_library.webp";
 
 export const ProjectItems = [
     {
         name: "Library Management System",
-        background: PrjGaming,
+        background: PrjLibrary,
         description: "1st Year University Project",
         webSite: "https://library.malkoha.site/",
         gitRepo: "https://github.com/viduwaa/library-management-system",

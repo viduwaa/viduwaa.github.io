@@ -8,13 +8,21 @@ import PrjStore from "/assets/projects/pr_store.webp";
 import PrjMalkoha from "/assets/projects/pr_malkoha.webp";
 import PrjGaming from "/assets/projects/pr_gaming.webp";
 import PrjLibrary from "/assets/projects/pr_library.webp";
+import PrjType from "/assets/projects/pr_type.webp";
 
 export const ProjectItems = [
+    {
+        name: "Extru Type Master",
+        background: PrjType,
+        description: "Realtime multiplayer typing speed game",
+        webSite: "https://type.viduwa.me/",
+        gitRepo: "https://github.com/viduwaa/extru-typemaster",
+    },
     {
         name: "Library Management System",
         background: PrjLibrary,
         description: "1st Year University Project",
-        webSite: "https://library.malkoha.site/",
+        webSite: null,
         gitRepo: "https://github.com/viduwaa/library-management-system",
     },
     {
